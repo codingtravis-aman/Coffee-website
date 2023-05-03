@@ -1,14 +1,4 @@
-/*! @license ScrollReveal v4.0.9
 
-	Copyright 2021 Fisssion LLC.
-
-	Licensed under the GNU General Public License 3.0 for
-	compatible open source projects and non-commercial use.
-
-	For commercial sites, themes, projects, and applications,
-	keep your source code private/proprietary by purchasing
-	a commercial license from https://scrollrevealjs.org/
-*/
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
@@ -108,29 +98,6 @@
 					typeof x.nodeName === 'string'
 	}
 
-	/*! @license is-dom-node-list v1.2.1
-
-		Copyright 2018 Fisssion LLC.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in all
-		copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-		SOFTWARE.
-
-	*/
 
 	function isDomNodeList(x) {
 		var prototypeToString = Object.prototype.toString.call(x);
@@ -145,29 +112,7 @@
 					(x.length === 0 || isDomNode(x[0]))
 	}
 
-	/*! @license Tealight v0.3.6
-
-		Copyright 2018 Fisssion LLC.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in all
-		copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-		SOFTWARE.
-
-	*/
+	
 
 	function tealight(target, context) {
 	  if ( context === void 0 ) { context = document; }
@@ -295,38 +240,14 @@
 
 	/*! @license Rematrix v0.3.0
 
-		Copyright 2018 Julian Lloyd.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in
-		all copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-		THE SOFTWARE.
+		
 	*/
 	/**
 	 * @module Rematrix
 	 */
 
 	/**
-	 * Transformation matrices in the browser come in two flavors:
 	 *
-	 *  - `matrix` using 6 values (short)
-	 *  - `matrix3d` using 16 values (long)
-	 *
-	 * This utility follows this [conversion guide](https://goo.gl/EJlUQ1)
-	 * to expand short form matrices to their equivalent long form.
 	 *
 	 * @param  {array} source - Accepts both short and long form matrices.
 	 * @return {array}
@@ -352,10 +273,8 @@
 	}
 
 	/**
-	 * Returns a matrix representing no transformation. The product of any matrix
-	 * multiplied by the identity matrix will be the original matrix.
-	 *
-	 * > **Tip:** Similar to how `5 * 1 === 5`, where `1` is the identity.
+	 * 
+	 * > *.
 	 *
 	 * @return {array}
 	 */
@@ -368,13 +287,7 @@
 	}
 
 	/**
-	 * Returns a 4x4 matrix describing the combined transformations
-	 * of both arguments.
-	 *
-	 * > **Note:** Order is very important. For example, rotating 45°
-	 * along the Z-axis, followed by translating 500 pixels along the
-	 * Y-axis... is not the same as translating 500 pixels along the
-	 * Y-axis, followed by rotating 45° along on the Z-axis.
+	 * 
 	 *
 	 * @param  {array} m - Accepts both short and long form matrices.
 	 * @param  {array} x - Accepts both short and long form matrices.
@@ -401,12 +314,7 @@
 	}
 
 	/**
-	 * Attempts to return a 4x4 matrix describing the CSS transform
-	 * matrix passed in, but will return the identity matrix as a
-	 * fallback.
-	 *
-	 * > **Tip:** This method is used to convert a CSS matrix (retrieved as a
-	 * `string` from computed styles) to its equivalent array format.
+	 * 
 	 *
 	 * @param  {string} source - `matrix` or `matrix3d` CSS Transform value.
 	 * @return {array}
@@ -474,10 +382,7 @@
 	}
 
 	/**
-	 * Returns a 4x4 matrix describing 2D scaling. The first argument
-	 * is used for both X and Y-axis scaling, unless an optional
-	 * second argument is provided to explicitly define Y-axis scaling.
-	 *
+	 * 
 	 * @param  {number} scalar    - Decimal multiplier.
 	 * @param  {number} [scalarY] - Decimal multiplier.
 	 * @return {array}
@@ -603,14 +508,7 @@
 					break
 				case '%':
 					/**
-					 * Here we use `getBoundingClientRect` instead of
-					 * the existing data attached to `element.geometry`
-					 * because only the former includes any transformations
-					 * current applied to the element.
-					 *
-					 * If that behavior ends up being unintuitive, this
-					 * logic could instead utilize `element.geometry.height`
-					 * and `element.geoemetry.width` for the distance calculation
+					 * 
 					 */
 					distance =
 						axis === 'Y'
@@ -634,18 +532,7 @@
 		if (config.scale !== 1) {
 			if (config.scale === 0) {
 				/**
-				 * The CSS Transforms matrix interpolation specification
-				 * basically disallows transitions of non-invertible
-				 * matrixes, which means browsers won't transition
-				 * elements with zero scale.
 				 *
-				 * That’s inconvenient for the API and developer
-				 * experience, so we simply nudge their value
-				 * slightly above zero; this allows browsers
-				 * to transition our element as expected.
-				 *
-				 * `0.0002` was the smallest number
-				 * that performed across browsers.
 				 */
 				transformations.push(scale(0.0002));
 			} else {
@@ -753,8 +640,7 @@
 	}
 
 	/**
-	 * apply a CSS string to an element using the CSSOM (element.style) rather
-	 * than setAttribute, which may violate the content security policy.
+	 * apply .
 	 *
 	 * @param {Node}   [el]  Element to receive styles.
 	 * @param {string} [declaration] Styles to apply.
@@ -903,8 +789,7 @@
 		this.delegate();
 
 		/**
-		 * Wipe any existing `setTimeout` now
-		 * that initialization has completed.
+		 * 
 		 */
 		this.initTimeout = null;
 	}
@@ -1013,12 +898,7 @@
 			seq.models = { visible: visible, revealed: revealed };
 
 			/**
-			 * If the sequence has no revealed members,
-			 * then we reveal the first visible element
-			 * within that sequence.
 			 *
-			 * The sequence then cues a recursive call
-			 * in both directions.
 			 */
 			if (!revealed.body.length) {
 				var nextId = seq.members[visible.body[0]];
@@ -1032,9 +912,7 @@
 			}
 
 			/**
-			 * If our element isn’t resetting, we check the
-			 * element sequence index against the head, and
-			 * then the foot of the sequence.
+			 * .
 			 */
 			if (
 				!seq.blocked.head &&
@@ -1144,9 +1022,7 @@
 					deepAssign(element, this$1.store.elements[existingId]);
 
 					/**
-					 * In order to prevent previously generated styles
-					 * from throwing off the new styles, the style tag
-					 * has to be reverted to its pre-reveal state.
+					 * I
 					 */
 					applyStyle(element.node, element.styles.inline.computed);
 				} else {
@@ -1204,9 +1080,7 @@
 			}, []);
 
 			/**
-			 * Modifying the DOM via setAttribute needs to be handled
-			 * separately from reading computed styles in the map above
-			 * for the browser to batch DOM changes (limiting reflows)
+			 * Modifying puted stDOM changes (limiting reflows)
 			 */
 			each(elements, function (element) {
 				this$1.store.elements[element.id] = element;
@@ -1280,27 +1154,9 @@
 	var polyfill = function (x) { return (x > 0) - (x < 0) || +x; };
 	var mathSign = Math.sign || polyfill;
 
-	/*! @license miniraf v1.0.1
+	/*! 
 
-		Copyright 2018 Fisssion LLC.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in all
-		copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-		SOFTWARE.
+		
 
 	*/
 	var polyfill$1 = (function () {
@@ -1324,8 +1180,7 @@
 
 	function getGeometry(target, isContainer) {
 		/**
-		 * We want to ignore padding and scrollbars for container elements.
-		 * More information here: https://goo.gl/vOZpbz
+		 * 
 		 */
 		var height = isContainer ? target.node.clientHeight : target.node.offsetHeight;
 		var width = isContainer ? target.node.clientWidth : target.node.offsetWidth;

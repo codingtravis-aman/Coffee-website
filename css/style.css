@@ -26,10 +26,10 @@ html{
 --font-semi-bold: 600;
 
 /* Color Variables */
---primary-color: #C87E4F;
+--primary-color: #ce6a2c;
 --primary-color-hover: #C2703D;
---text-color: #333;
---text-color-light: #888682;
+--text-color: #424141;
+--text-color-light: #7a7975;
 --border-color: #484848;
 --white-color: #FFF;
 --section-bg: #2C3034;
