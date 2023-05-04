@@ -1,15 +1,6 @@
 Some link and texts for this website.
 
- <!-- For Nav Section -->
-facebook - https://www.facebook.com
-twitter - https://twitter.com/i/flow/login
-instagram - https://www.instagram.com/accounts/login
-github - https://github.com/login
-youtube - https://www.youtube.com/login
 
-contact num - 0022-0303-2030
-
-<!-- For Home Section -->
 subtitle - We really like what we do.
 title - Coffee Beans with a <br> Perfect Aroma
 
@@ -70,12 +61,6 @@ TimeTable
  content-des - Coffee is a cafe that serve many variant of coffee and other dishes with very comfortable place.
 
 
-Facility
-Private Room
-Meeting Room
-Event Room
-Creative Studio
-Custom Room
 
 Product
 Coffee
