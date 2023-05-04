@@ -69,7 +69,6 @@ TimeTable
  <!-- Footer Section -->
  content-des - Coffee is a cafe that serve many variant of coffee and other dishes with very comfortable place.
 
- location - USA Californa 65 South Fifth St.Sicklerville, NJ 08081
 
 Facility
 Private Room
@@ -89,4 +88,4 @@ FAQs
 Private Policy
 Help Us
 
-&#169; CodingLab. All rigths reserved
+&#169; . All rigths reserved
