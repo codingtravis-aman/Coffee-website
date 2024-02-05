@@ -1,5 +1,5 @@
 // Swiper js
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   // grabCursor: true,
   loop: true,
