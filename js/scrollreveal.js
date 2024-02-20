@@ -64,7 +64,7 @@
 		}
 	}
 
-	var mount = { success: success, failure: failure };
+	let mount = { success: success, failure: failure };
 
 	/*! @license is-dom-node v1.0.4
 
