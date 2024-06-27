@@ -61,7 +61,7 @@ window.addEventListener("scroll", () => {
     const sectionHeight = section.offsetHeight,
           sectionTop = section.offsetTop - 100;
 
-          var navId = document.querySelector(`.menu-content a[href='#${section.id}']`);
+          let navId = document.querySelector(`.menu-content a[href='#${section.id}']`);
           if(scrollY > sectionTop && scrollY <=  sectionTop + sectionHeight){
             navId.classList.add("active-navlink");           
           }else{
